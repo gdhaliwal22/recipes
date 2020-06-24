@@ -22,9 +22,11 @@ h2 {
 
 .btn {
   background-color: #f7930a;
-  color: #fff;
   border: none;
+  color: #fff;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
   font-size: 0.8rem;
   font-weight: 600;
