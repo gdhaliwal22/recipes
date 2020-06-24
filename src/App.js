@@ -10,9 +10,11 @@ import { RandomMeal } from "./components";
 
 function App() {
   return (
-    <div>
-      Hello
-      <RandomMeal />
+    <div className="App">
+      <div className="container">
+        <h2>Featued Meal</h2>
+        <RandomMeal />
+      </div>
     </div>
   );
 }

@@ -19,10 +19,30 @@ const RandomMeal = () => {
   }, []);
 
   if (!meal) return null;
+
+  const { strMeal, strMealThumb, strInstructions, strArea, strCategory } = meal;
+
   return (
-    <div>
-      <h1>Random Meal</h1>
-      <h2>{meal.strMeal}</h2>
+    <div className="meal">
+      <div className="meal-img">
+        <img src={strMealThumb} alt={strMeal} />
+      </div>
+      <div className="meal-details">
+        <h3 className="meal-title">{strMeal}</h3>
+        <p className="meal-instruction">
+          {strInstructions.substring(0, 200) + "..."}
+        </p>
+        <ul className="meal-info">
+          <li>
+            Category:
+            <strong> {strCategory}</strong>
+          </li>
+          <li>
+            Area:
+            <strong> {strArea}</strong>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
