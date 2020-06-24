@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h2>Featued Meal</h2>
+        <h2>Featured Meal</h2>
         <RandomMeal />
       </div>
     </div>

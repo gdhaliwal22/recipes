@@ -10,14 +10,27 @@
 }
 
 body {
-  background-color: #c4a4d4;
+  background-color: #b97ed6;
   color: var(--black);
   font-family: "Poppins", sans-serif;
 }
 
 h2 {
   display: inline-block;
-  color: var(--primary-color);
+  color: var(--black);
+}
+
+.btn {
+  background-color: #f7930a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 20px 35px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -29,12 +42,15 @@ h2 {
 
 .meal {
   background-color: #fff;
-  border-radius: 5px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  border-radius: 5px;
   display: flex;
 }
+
 .meal-img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
   flex: 1;
 }
 .meal-img img {
@@ -45,11 +61,14 @@ h2 {
 
 .meal-details {
   padding: 30px;
+  position: relative;
   flex: 2;
 }
 
 .meal-title {
   color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
   margin: 0 0 20px;
 }
 .meal-instruction {
@@ -73,4 +92,10 @@ h2 {
   color: var(--primary-color);
   font-size: 14px;
   display: block;
+}
+
+.meal-details .btn {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
 }

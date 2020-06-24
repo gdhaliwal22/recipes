@@ -42,6 +42,9 @@ const RandomMeal = () => {
             <strong> {strArea}</strong>
           </li>
         </ul>
+        <button className="btn">
+          View Recipe <i className="fas fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   );
